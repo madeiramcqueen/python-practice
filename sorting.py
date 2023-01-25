@@ -1,4 +1,4 @@
-print("Python sorting practice!")
+# sorting through lists practice
 
 countries = ["Vietnmam", "Thailand", "Cambodia", "Peru", "Alaska"]
 print(countries)
