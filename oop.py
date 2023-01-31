@@ -1,3 +1,5 @@
+# LinkedIn Learning: "Python Object Oriented Programming" Course
+
 # Create a basic class
 class Book:
     def __init__(self, title, author, pages, price): # initializer function, initializing its attributes

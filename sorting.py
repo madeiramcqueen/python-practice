@@ -1,5 +1,6 @@
-# sorting through lists practice
+# Python Crash Course exercises
 
+# sorting through lists practice
 countries = ["Vietnmam", "Thailand", "Cambodia", "Peru", "Alaska"]
 print(countries)
 print("My list using sorted method:")

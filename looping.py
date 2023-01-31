@@ -1,9 +1,11 @@
+# Python Crash Course exercises
+
 # looping through lists practice
 names = ["madeira", "clyde", "colleen", "sean"]
 
 # loop through each name in the list using a FOR LOOP
 for name in names:
-   # print(name)
+# print(name)
 # print f string looping through names
     print(f'{name.title()} is so cool!')
 print(f'Have a great weekend, {names[0]}, {names[1]}, {names[2]}, and {names[3]}!')
