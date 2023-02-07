@@ -37,6 +37,14 @@ class Book:
         
         return self.price < value.price
 
+    # Use the __call__ method to call the object like a function
+    def __call__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
+        
+
+
 b1 = Book("Python Crash Course", "Eric Matthes", 25.00)
 b2 = Book("The Scent Keeper", "Erica Bauermeister", 15.00
 )
@@ -48,10 +56,14 @@ b3 = Book("Python Crash Course", "Eric Matthes", 25.00)
 # print(b1 == 100) # should print ValueError message
 
 # Check for a greater than or lesser than value
-print(b1 >= b3) # should result in True
-print(b1 < b2) # should result in False
+# print(b1 >= b3) # should result in True
+# print(b1 < b2) # should result in False
 
 # Sort the books based on price, lowest to highest
-books = [b1, b3, b2]
-books.sort()
-print([book.title for book in books]) #list comprehension
+# books = [b1, b3, b2]
+# books.sort()
+# print([book.title for book in books]) #list comprehension
+
+print(b1)
+b1("Hello World", "Madeira", 20.00)
+print(b1)
