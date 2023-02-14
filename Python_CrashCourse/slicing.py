@@ -31,3 +31,20 @@ print(players_list)
 players_list.append('Sean')
 print(players_list)
 print(players)
+
+foods = ['pizza', 'thai food', 'pasta', 'tacos']
+print(foods)
+
+# Append oysters to foods list
+foods.append('oysters')
+print(foods)
+
+# Make a copy of foods list for friends
+friends_foods = foods[:]
+print(friends_foods)
+# Append a food item to friends_foods
+friends_foods.append('burger and fries')
+print(friends_foods)
+
+# Use string interpolation using the two foods lists
+print(f"My favorite foods are {foods} and my friends' favorites foods are {friends_foods}")
