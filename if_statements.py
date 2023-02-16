@@ -21,3 +21,27 @@ car == 'audi' # Should evaluate to False
 number = 10
 if number != 9:
     print('Try again!')
+
+# Simple elif statements
+age = 20
+if age < 4:
+    print("Your admission cost is $0")
+
+elif age > 18:
+    print("Your admission cost is $25")
+
+else:
+    print("Your admission cost is $40")
+
+# More efficient way: Putting the price inside each statement
+age = 12
+if age < 4:
+    price = 0
+
+elif age > 18:
+    price = 25
+
+else:
+    price = 40
+
+print(f"Your admission cost is ${price}")
