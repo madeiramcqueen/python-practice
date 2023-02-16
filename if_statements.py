@@ -45,3 +45,17 @@ else:
     price = 40
 
 print(f"Your admission cost is ${price}")
+
+# Using if statements only, rather than elif, is beneficial when more than one statement may be true
+# The code below would not work with an if-elif-else statement because once it hits the first True statement, then it will stop running.
+pizza_toppings = ['mushrooms', 'extra cheese']
+if 'mushrooms' in pizza_toppings:
+    print("Adding mushrooms.")
+
+if 'pepperoni' in pizza_toppings:
+    print("Adding pepperoni.")
+
+if 'extra cheese' in pizza_toppings:
+    print("Adding extra cheese.")
+
+print("\nFinished making your pizza!")
