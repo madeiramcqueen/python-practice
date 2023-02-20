@@ -10,4 +10,9 @@ def main():
     s = "This is a string!"
     print(s)
 
+   # print(s+b) # should result in a TypeError because you bytes are not converted to a str -- should "decode" the bytes into a string, can use the decode method to do so
+
+    s2 = b.decode('utf-8')
+    print(s+s2)
+
 main()
