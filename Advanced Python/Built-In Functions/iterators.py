@@ -22,10 +22,12 @@ def main():
     for day in range(len(days)):
         print(day+1, days[day])
 
-
     # use enumerate to reduce code and provide a counter
+    for i, day in enumerate(days, start=1):
+        print(i, day)
 
-
-    # use zip to combine sequences
+    # use zip to combine sequences and create tuples
+    for day in zip(days, daysFr):
+        print(day)
 
 print(main())
