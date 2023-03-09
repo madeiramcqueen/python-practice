@@ -9,7 +9,7 @@ def main():
     # list of students in class 2
     class2 = ["Aria", "Ross", "Rachel", "Mila", "Sam", "Gabby", "Liz"]
 
-    # create a counter for class1 and class2
+    # create a counter for class1 and class2x
     c1 = Counter(class1)
     c2 = Counter(class2)
 
