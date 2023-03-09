@@ -44,3 +44,10 @@ num *= 2
 #to subtract 1
 num = num - 1
 num -= 1
+
+# Ternery expressions
+x = "Is true" if True else "Is false"
+print(x)
+
+t = 90
+print("Water is boiling" if t >= 100 else "Water is not boiling")
