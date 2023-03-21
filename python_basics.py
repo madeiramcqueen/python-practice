@@ -77,3 +77,22 @@ while count <= 10:
     count += 1
     print(f"The number is: {count}")
 
+# Range
+for num in range(0,5):
+    print(num) # should print 0-4
+
+# Range by 2s
+for num in range(0,5,2):
+    print(num) # should print 0, 2, 4
+
+# Use range to create a list and a tuple
+nums = list(range(10))
+print(nums) # should print [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+odds = tuple(range(1, 10, 2))
+print(odds) # should print (1, 3, 5, 7, 9)
+
+# Use range and a negative number as step to count down
+for num in range(5, 0, -1):
+    print(num) # should print 5, 4, 3, 2, 1
+
