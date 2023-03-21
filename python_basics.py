@@ -51,3 +51,16 @@ print(x)
 
 t = 90
 print("Water is boiling" if t >= 100 else "Water is not boiling")
+
+# if, elif, else statements
+color = input('Enter "green", "yellow", or "red": ').lower()
+print(f'The user entered {color}')
+
+if color == 'green':
+    print("Go!")
+elif color == 'yellow':
+    print("Slow down!")
+elif color == 'red':
+    print("Stop!")
+else:
+    print("Bogus!")
