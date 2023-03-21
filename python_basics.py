@@ -64,3 +64,9 @@ elif color == 'red':
     print("Stop!")
 else:
     print("Bogus!")
+
+# Basic for looping
+colors = ["yellow", "red", "purple", "pink", "blue"]
+
+for color in colors:
+    print(color, end=" ")
