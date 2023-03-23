@@ -37,6 +37,7 @@ while phrase != 'quit':
     print(f'What you entered is {len(phrase)} characters long')
 else:
     print('Bye!')
+    
 # exercise-03 Calculate Dog Years
 
 # Write the code that:
