@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 input_values = [1, 2, 3, 4, 5] # input values
 squares = [1, 4, 9, 16, 25] # output values
 
+plt.style.use("seaborn-v0_8-dark") #add styling to graph
 fig, ax = plt.subplots()
 ax.plot(input_values, squares, linewidth=3)
 
