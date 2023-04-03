@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 # Use a loop to configure and display data calculations
 
 x_values = range(1, 1001)
-y_values = [x**2 for x in x_values] # calculate the square root of each x value
+y_values = [x**2 for x in x_values] # calculate the square root of each x value, using a list comprehension, the result is the y_value
 
 plt.style.use("seaborn-v0_8-dark")
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values, s=10)
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.PuRd, s=10)
 
 # Set chart title and label axis
 ax.set_title("Square Numbers", fontsize=24)
