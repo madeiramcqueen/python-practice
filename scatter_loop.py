@@ -7,7 +7,7 @@ y_values = [x**2 for x in x_values] # calculate the square root of each x value,
 
 plt.style.use("seaborn-v0_8-dark")
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.PuRd, s=10)
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.PuRd, s=10) # add colormap to enhance visualization of data (shows a color gradient from starting point to ending point)
 
 # Set chart title and label axis
 ax.set_title("Square Numbers", fontsize=24)
