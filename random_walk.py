@@ -4,7 +4,7 @@ from random import choice
 
 # Create a random class to generate random walks
 class RandomWalk:
-    def __init__(self, num_points=500):
+    def __init__(self, num_points=5000):
         self.num_points = num_points # the initialized attribute of the walk
 
         # All walks start at (0, 0)
