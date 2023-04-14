@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 # plt.show()
 
-#october 3-7 plotted data
+# october 3-7 plotted data
 oct3_x = [3, 4, 5, 6, 7]
 oct3_y = [774.25, 776.065002, 769.5, 772.559, 771.998]
 
@@ -41,4 +41,7 @@ plt.ylabel("Financial Data Values")
 
 # lines graphs per day
 lines = plt.plot(oct3_x, oct3_y, color="purple")
+
+# add a legend for october dates
+plt.legend(["October 3rd"], loc=0)
 plt.show()
