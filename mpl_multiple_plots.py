@@ -38,10 +38,21 @@ oct7_y = [779.659973, 779.659973, 770.75, 775.080017]
 plt.title("October Data")
 plt.xlabel("October Dates")
 plt.ylabel("Financial Data Values")
+legend_drawn_flag = True
 
-# lines graphs per day
-lines = plt.plot(oct3_x, oct3_y, color="purple")
+# line graphs per day
+fig, ax = plt.subplots()
+plt.plot(oct3_x, oct3_y, color="purple")
+plt.plot(oct4_x, oct4_y, color="green")
+plt.plot(oct5_x, oct5_y, color="orange")
+plt.plot(oct6_x, oct6_y, color="yellow")
+# plt.plot(oct7_x, oct7_y, color="blue")
 
 # add a legend for october dates
-plt.legend(["October 3rd"], loc=0)
+plt.legend(
+    ["October 3rd", "October 4th", "October 5th", "October 6th", "October 7th"],
+    loc=0,
+    frameon=legend_drawn_flag,
+)
+
 plt.show()
