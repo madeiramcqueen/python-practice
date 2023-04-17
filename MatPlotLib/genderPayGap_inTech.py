@@ -39,8 +39,9 @@ male_salary = {
 df1 = pd.DataFrame(female_salary)
 df2 = pd.DataFrame(male_salary)
 
-print(df1)
-print(df2)
+result = pd.merge(df1, df2)
+
+print(result)
 
 # tech companies plotted data
 # companies = ["Ebay", "Apple", "Facebook", "Microsoft", "Google", "PayPal", "Oracle", "Visa", "Cisco", "Adobe"]
@@ -51,10 +52,18 @@ print(df2)
 # add labels and type of graph
 # fig, ax = plt.subplots()
 plt.bar(
-    df2["companies"], df2["male_salaries"], color="Green", align="center", width=0.4
+    result["companies"],
+    result["male_salaries"],
+    color="Green",
+    align="center",
+    width=0.4,
 )
 plt.bar(
-    df1["companies"], df1["female_salaries"], color="Purple", align="edge", width=0.4
+    result["companies"],
+    result["female_salaries"],
+    color="Purple",
+    align="edge",
+    width=0.4,
 )
 plt.title("Gender Pay Gaps in Major Tech Companies")
 plt.xlabel("Male vs Female")
