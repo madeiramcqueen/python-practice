@@ -50,13 +50,17 @@ print(df2)
 
 # add labels and type of graph
 # fig, ax = plt.subplots()
-plt.bar(df1["companies"], df1["female_salaries"], color="Purple")
-plt.bar(df2["companies"], df2["male_salaries"], color="Green")
+plt.bar(
+    df2["companies"], df2["male_salaries"], color="Green", align="center", width=0.4
+)
+plt.bar(
+    df1["companies"], df1["female_salaries"], color="Purple", align="edge", width=0.4
+)
 plt.title("Gender Pay Gaps in Major Tech Companies")
-plt.xlabel("Female vs Male")
+plt.xlabel("Male vs Female")
 plt.ylabel("Annual Salaries")
 legend_drawn_flag = True
 
 # add legend
-plt.legend(["Avg Female Salary"], loc=0, frameon=legend_drawn_flag)
+plt.legend(["Avg Male Salary", "Avg Female Salary"], loc=0, frameon=legend_drawn_flag)
 plt.show()
